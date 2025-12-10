@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Festival | Chorus Symphonia 2025</title>
+    <meta name="description"
+        content="Découvrez l'histoire et les valeurs du festival Chorus Symphonia, 27 ans de passion pour la musique classique">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Modification de la police pour utiliser Arimo -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Arimo:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Application de BEM et amélioration de l'accessibilité -->
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="header__nav" role="navigation" aria-label="Navigation principale">
+                <!-- Ajout du logo image -->
+                <a href="index.html" class="header__logo">
+                    <img src="public/images/logo.jpg" alt="" class="header__logo-image" aria-hidden="true">
+                    <span>Chorus Symphonia</span>
+                </a>
+                <button class="header__menu-toggle" id="menuToggle" aria-label="Ouvrir le menu de navigation"
+                    aria-expanded="false" aria-controls="navMenu">
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                </button>
+                <ul class="header__nav-list" id="navMenu">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Accueil</a></li>
+                    <li class="header__nav-item"><a href="programme.html" class="header__nav-link">Programme</a></li>
+                    <li class="header__nav-item"><a href="artistes.html" class="header__nav-link">Artistes</a></li>
+                    <li class="header__nav-item"><a href="scenes.html" class="header__nav-link">Scènes</a></li>
+                    <li class="header__nav-item"><a href="festival.html"
+                            class="header__nav-link header__nav-link--active" aria-current="page">Le Festival</a></li>
+                    <li class="header__nav-item"><a href="infos_pratiques.html" class="header__nav-link">Infos
+                            pratiques</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <!-- Remplacement de page-header par un hero avec image -->
+        <section class="hero hero--with-image hero--small">
+            <!-- Remplacement du placeholder par une image générée -->
+            <img src="public/images/festival-hero-about.jpg" alt="Célébration du festival de musique classique"
+                class="hero__background" aria-hidden="true">
+            <div class="hero__overlay"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Le Festival</h1>
+                    <p class="hero__subtitle">27 ans de passion pour la musique classique</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <article class="content">
+                    <h2 class="content__heading">Notre Histoire</h2>
+                    <p class="content__text">
+                        Fondé en 1998, Chorus Symphonia est né de la volonté de rendre la musique classique accessible à
+                        tous
+                        dans un cadre d'exception. Depuis 27 ans, le festival s'est imposé comme un rendez-vous
+                        incontournable
+                        pour les mélomanes et les amateurs de découvertes musicales.
+                    </p>
+                    <p class="content__text">
+                        Chaque année en juin, pendant une semaine, Paris vibre au rythme des plus grandes œuvres du
+                        répertoire
+                        classique, interprétées par les artistes les plus renommés de la scène internationale. Des
+                        salles
+                        prestigieuses comme l'Opéra National de Paris, le Théâtre des Champs-Élysées et la Salle Pleyel
+                        accueillent ces concerts exceptionnels.
+                    </p>
+
+                    <h2 class="content__heading">Notre Vision</h2>
+                    <p class="content__text">
+                        Chorus Symphonia s'engage à promouvoir l'excellence musicale tout en favorisant l'accès à la
+                        culture
+                        pour tous les publics. Notre programmation équilibre les chefs-d'œuvre du répertoire et les
+                        découvertes,
+                        les artistes consacrés et les jeunes talents prometteurs.
+                    </p>
+                    <p class="content__text">
+                        Nous croyons que la musique classique est un patrimoine vivant qui doit être partagé et
+                        transmis.
+                        C'est pourquoi nous proposons également des rencontres avec les artistes, des conférences et des
+                        ateliers pédagogiques pour tous les âges.
+                    </p>
+
+                    <h2 class="content__heading">Les Chiffres Clés</h2>
+                    <div class="stats">
+                        <div class="stats__item">
+                            <div class="stats__number">27</div>
+                            <div class="stats__label">Éditions</div>
+                        </div>
+                        <div class="stats__item">
+                            <div class="stats__number">8</div>
+                            <div class="stats__label">Concerts</div>
+                        </div>
+                        <div class="stats__item">
+                            <div class="stats__number">3</div>
+                            <div class="stats__label">Salles</div>
+                        </div>
+                        <div class="stats__item">
+                            <div class="stats__number">15000</div>
+                            <div class="stats__label">Spectateurs</div>
+                        </div>
+                    </div>
+
+                    <h2 class="content__heading">Notre Équipe</h2>
+                    <p class="content__text">
+                        Le festival est dirigé par une équipe passionnée de professionnels de la musique et de la
+                        culture,
+                        sous la direction artistique de Claire Beaumont, ancienne violoniste au sein de l'Orchestre de
+                        Paris.
+                        Notre comité artistique réunit des personnalités reconnues du monde musical pour garantir la
+                        qualité
+                        et la diversité de notre programmation.
+                    </p>
+
+                    <h2 class="content__heading">Nos Valeurs</h2>
+                    <ul class="content__list">
+                        <li class="content__list-item"><strong>Excellence artistique :</strong> Nous invitons les
+                            meilleurs artistes internationaux pour offrir des concerts d'exception</li>
+                        <li class="content__list-item"><strong>Accessibilité :</strong> Nous proposons des tarifs
+                            adaptés et des actions de médiation pour toucher tous les publics</li>
+                        <li class="content__list-item"><strong>Innovation :</strong> Nous explorons de nouvelles formes
+                            de présentation et d'interaction avec la musique classique</li>
+                        <li class="content__list-item"><strong>Transmission :</strong> Nous développons des programmes
+                            pédagogiques pour les jeunes générations</li>
+                        <li class="content__list-item"><strong>Rayonnement :</strong> Nous contribuons au prestige
+                            culturel de Paris et de la France</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <h3 class="footer__title">Chorus Symphonia</h3>
+                    <p class="footer__description">Un festival d'exception dédié à la musique classique depuis 1998</p>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__heading">Navigation</h4>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="index.html" class="footer__link">Accueil</a></li>
+                        <li class="footer__link-item"><a href="programme.html" class="footer__link">Programme</a></li>
+                        <li class="footer__link-item"><a href="artistes.html" class="footer__link">Artistes</a></li>
+                        <li class="footer__link-item"><a href="scenes.html" class="footer__link">Scènes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__heading">Informations</h4>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="festival.html" class="footer__link">Le Festival</a></li>
+                        <li class="footer__link-item"><a href="infos_pratiques.html" class="footer__link">Infos
+                                pratiques</a></li>
+                        <li class="footer__link-item"><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__heading">Newsletter</h4>
+                    <p class="footer__newsletter-text">Restez informé de nos actualités</p>
+                    <form class="footer__newsletter-form" aria-label="Formulaire d'inscription à la newsletter">
+                        <label for="newsletter-email-festival" class="sr-only">Adresse email pour la newsletter</label>
+                        <input type="email" id="newsletter-email-festival" placeholder="Votre email"
+                            class="footer__newsletter-input" required aria-required="true">
+                        <button type="submit" class="btn btn--primary btn--sm">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Chorus Symphonia. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/menu.js"></script>
+</body>
+
+</html>
