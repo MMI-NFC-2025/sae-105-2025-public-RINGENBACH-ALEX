@@ -1,0 +1,28 @@
+/* Variable collection */
+:root {
+    /* Mode 1 */
+    /* color */
+    --doré-clair: #fdf6c8;
+    --gris-claire: #bcbcbc;
+    --ivoir: #f8f5e7;
+    --noir: #000000;
+    --or-profond: #d7b56e;
+
+
+    /* Text Style Variables */
+
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+    --font-weight-regular: 25rem;
+    --letter-spacing-0: 0rem;
+    --line-height-24: 1.5rem;
+    --line-height-27: 1.6875rem;
+    --line-height-30: 1.875rem;
+    --line-height-36: 2.25rem;
+    --list-spacing-0: 0rem;
+    --paragraph-indent-0: 0rem;
+    --paragraph-spacing-0: 0rem;
+    --font-family-arimo: Arimo;
+}
