@@ -13,6 +13,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/icons/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/icons/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/icons/favicons/site.webmanifest" />
 </head>
 
 <body>
@@ -21,7 +26,10 @@
     <header class="header" role="banner">
         <div class="container">
             <nav class="header__nav" role="navigation" aria-label="Navigation principale">
-                <a href="index.html" class="header__logo">Chorus Symphonia</a>
+                <a href="index.html" class="header__logo">
+                    <img src="assets/icons/logo.svg" alt="" class="header__logo-image" aria-hidden="true">
+                    <span>Chorus Symphonia</span>
+                </a>
                 <button class="header__menu-toggle" id="menuToggle" aria-label="Ouvrir le menu de navigation"
                     aria-expanded="false" aria-controls="navMenu">
                     <span class="header__menu-line"></span>
@@ -29,8 +37,6 @@
                     <span class="header__menu-line"></span>
                 </button>
                 <ul class="header__nav-list" id="navMenu">
-                    <li class="header__nav-item"><a href="index.html" class="header__nav-link header__nav-link--active"
-                            aria-current="page">Accueil</a></li>
                     <li class="header__nav-item"><a href="programme.html" class="header__nav-link">Programme</a></li>
                     <li class="header__nav-item"><a href="artistes.html" class="header__nav-link">Artistes</a></li>
                     <li class="header__nav-item"><a href="scenes.html" class="header__nav-link">Scènes</a></li>
@@ -47,7 +53,7 @@
         <!-- Hero Section -->
         <!-- Ajout d'une image de fond pour le hero -->
         <section class="hero hero--with-image">
-            <img src="/placeholder.svg?height=600&width=1920" alt="" class="hero__background" aria-hidden="true">
+            <img src="/assets/img/hero_accueil.png" alt="" class="hero__background" aria-hidden="true">
             <div class="hero__overlay"></div>
             <div class="container">
                 <div class="hero__content">
@@ -74,7 +80,7 @@
                         </div>
                     </div>
                     <div class="hero__actions">
-                        <a href="#billetterie" class="btn btn--primary">Réserver vos billets</a>
+                        <a href="" class="btn btn--primary">Réserver vos billets</a>
                         <a href="programme.html" class="btn btn--outline">Découvrir le programme</a>
                     </div>
                 </div>
@@ -90,7 +96,7 @@
                 </div>
 
                 <div class="grid grid--4">
-                    <article class="card card--hover">
+                    <section class="card card--hover">
                         <div class="card__icon">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 aria-hidden="true">
@@ -102,9 +108,9 @@
                         <h3 class="card__title">Programme</h3>
                         <p class="card__description">8 soirées exceptionnelles avec les plus grands chefs-d'œuvre</p>
                         <a href="programme.html" class="card__link">En savoir plus <span aria-hidden="true">→</span></a>
-                    </article>
+                    </section>
 
-                    <article class="card card--hover">
+                    <section class="card card--hover">
                         <div class="card__icon">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 aria-hidden="true">
@@ -117,9 +123,9 @@
                         <h3 class="card__title">Artistes</h3>
                         <p class="card__description">Découvrez les artistes de renommée internationale</p>
                         <a href="artistes.html" class="card__link">En savoir plus <span aria-hidden="true">→</span></a>
-                    </article>
+                    </section>
 
-                    <article class="card card--hover">
+                    <section class="card card--hover">
                         <div class="card__icon">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 aria-hidden="true">
@@ -139,9 +145,9 @@
                         <h3 class="card__title">Scènes</h3>
                         <p class="card__description">3 salles prestigieuses au cœur de Paris</p>
                         <a href="scenes.html" class="card__link">En savoir plus <span aria-hidden="true">→</span></a>
-                    </article>
+                    </section>
 
-                    <article class="card card--hover">
+                    <section class="card card--hover">
                         <div class="card__icon">
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 aria-hidden="true">
@@ -154,7 +160,7 @@
                         <h3 class="card__title">Le Festival</h3>
                         <p class="card__description">27 ans de passion pour la musique classique</p>
                         <a href="festival.html" class="card__link">En savoir plus <span aria-hidden="true">→</span></a>
-                    </article>
+                    </section>
                 </div>
             </div>
         </section>
@@ -165,7 +171,7 @@
                 <h2 class="section__title">Informations Pratiques</h2>
 
                 <div class="grid grid--3">
-                    <article class="card">
+                    <section class="card">
                         <h3 class="card__title-with-icon">
                             <svg class="card__icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" aria-hidden="true">
@@ -179,9 +185,9 @@
                         <p class="card__info-highlight">15-22 Juin 2025</p>
                         <a href="infos_pratiques.html" class="card__link">Voir plus <span
                                 aria-hidden="true">→</span></a>
-                    </article>
+                    </section>
 
-                    <article class="card">
+                    <section class="card">
                         <h3 class="card__title-with-icon">
                             <svg class="card__icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" aria-hidden="true">
@@ -192,9 +198,9 @@
                         </h3>
                         <p class="card__info-text">Opéra National, Paris</p>
                         <a href="infos_pratiques.html" class="card__link">Accès <span aria-hidden="true">→</span></a>
-                    </article>
+                    </section>
 
-                    <article class="card">
+                    <section class="card">
                         <h3 class="card__title-with-icon">
                             <svg class="card__icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" aria-hidden="true">
@@ -208,7 +214,7 @@
                         </h3>
                         <p class="card__info-highlight">À partir de 35€</p>
                         <a href="#billetterie" class="btn btn--primary btn--sm">Réserver</a>
-                    </article>
+                    </section>
                 </div>
             </div>
         </section>
@@ -225,25 +231,39 @@
                     <div class="partners__category">
                         <h3 class="partners__category-title">Partenaires Institutionnels</h3>
                         <div class="partners__grid">
-                            <div class="partners__logo" role="img" aria-label="Ville de Paris">Ville de Paris</div>
-                            <div class="partners__logo" role="img" aria-label="Île-de-France">Île-de-France</div>
-                            <div class="partners__logo" role="img" aria-label="SACEM">SACEM</div>
-                            <div class="partners__logo" role="img" aria-label="Orange">Orange</div>
+                            <div class="partners__logo">
+                                <img src="/assets/img/ville_de_paris.png" alt="Ville de Paris">
+                            </div>
+                            <div class="partners__logo">
+                                <img src="/assets/img/gouvernement.png" alt="Île-de-France">
+                            </div>
+                            <div class="partners__logo">
+                                <img src="/assets/img/sacem.png" alt="SACEM">
+                            </div>
+                            <div class="partners__logo">
+                                <img src="/assets/img/orange.png" alt="Orange">
+                            </div>
                         </div>
                     </div>
 
                     <div class="partners__category">
                         <h3 class="partners__category-title">Mécènes</h3>
                         <div class="partners__grid">
-                            <div class="partners__logo" role="img" aria-label="LVMH">LVMH</div>
+                            <div class="partners__logo">
+                                <img src="/assets/img/lvmh.png" alt="LVMH">
+                            </div>
                         </div>
                     </div>
 
                     <div class="partners__category">
                         <h3 class="partners__category-title">Partenaires Médias</h3>
                         <div class="partners__grid">
-                            <div class="partners__logo" role="img" aria-label="Le Figaro">Le Figaro</div>
-                            <div class="partners__logo" role="img" aria-label="Classica">Classica</div>
+                            <div class="partners__logo">
+                                <img src="/assets/img/le_figaro.png" alt="Le Figaro">
+                            </div>
+                            <div class="partners__logo">
+                                <img src="/assets/img/classica.png" alt="Classica">
+                            </div>
                         </div>
                     </div>
 
@@ -268,7 +288,6 @@
                 <div class="footer__section">
                     <h4 class="footer__heading">Navigation</h4>
                     <ul class="footer__links">
-                        <li class="footer__link-item"><a href="index.html" class="footer__link">Accueil</a></li>
                         <li class="footer__link-item"><a href="programme.html" class="footer__link">Programme</a></li>
                         <li class="footer__link-item"><a href="artistes.html" class="footer__link">Artistes</a></li>
                         <li class="footer__link-item"><a href="scenes.html" class="footer__link">Scènes</a></li>
