@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chorus Symphonia 2025 | Festival de Musique Classique à Paris</title>
+    <meta name="description"
+        content="Une célébration exceptionnelle de la musique classique du 15 au 22 Juin 2025 à l'Opéra National de Paris">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Ajout de la méthodologie BEM et amélioration de l'accessibilité -->
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="header__nav" role="navigation" aria-label="Navigation principale">
+                <a href="index.html" class="header__logo">Chorus Symphonia</a>
+                <button class="header__menu-toggle" id="menuToggle" aria-label="Ouvrir le menu de navigation"
+                    aria-expanded="false" aria-controls="navMenu">
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                </button>
+                <ul class="header__nav-list" id="navMenu">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link header__nav-link--active"
+                            aria-current="page">Accueil</a></li>
+                    <li class="header__nav-item"><a href="programme.html" class="header__nav-link">Programme</a></li>
+                    <li class="header__nav-item"><a href="artistes.html" class="header__nav-link">Artistes</a></li>
+                    <li class="header__nav-item"><a href="scenes.html" class="header__nav-link">Scènes</a></li>
+                    <li class="header__nav-item"><a href="festival.html" class="header__nav-link">Le Festival</a></li>
+                    <li class="header__nav-item"><a href="infos_pratiques.html" class="header__nav-link">Infos
+                            pratiques</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <!-- Hero Section -->
+        <!-- Ajout d'une image de fond pour le hero -->
+        <section class="hero hero--with-image">
+            <img src="/placeholder.svg?height=600&width=1920" alt="" class="hero__background" aria-hidden="true">
+            <div class="hero__overlay"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Chorus Symphonia 2025</h1>
+                    <p class="hero__subtitle">Une célébration exceptionnelle de la musique classique</p>
+                    <div class="hero__info">
+                        <div class="hero__info-item">
+                            <svg class="hero__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                            <span>15-22 Juin 2025</span>
+                        </div>
+                        <div class="hero__info-item">
+                            <svg class="hero__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Opéra National, Paris</span>
+                        </div>
+                    </div>
+                    <div class="hero__actions">
+                        <a href="#billetterie" class="btn btn--primary">Réserver vos billets</a>
+                        <a href="programme.html" class="btn btn--outline">Découvrir le programme</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discover Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Découvrez le Festival</h2>
+                    <p class="section__description">Explorez toutes les facettes de Chorus Symphonia 2025</p>
+                </div>
+
+                <div class="grid grid--4">
+                    <article class="card card--hover">
+                        <div class="card__icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M9 18V5l12-2v13" />
+                                <circle cx="6" cy="18" r="3" />
+                                <circle cx="18" cy="16" r="3" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Programme</h3>
+                        <p class="card__description">8 soirées exceptionnelles avec les plus grands chefs-d'œuvre</p>
+                        <a href="programme.html" class="card__link">En savoir plus <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="card card--hover">
+                        <div class="card__icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Artistes</h3>
+                        <p class="card__description">Découvrez les artistes de renommée internationale</p>
+                        <a href="artistes.html" class="card__link">En savoir plus <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="card card--hover">
+                        <div class="card__icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
+                                <path d="M9 22v-4h6v4" />
+                                <path d="M8 6h.01" />
+                                <path d="M16 6h.01" />
+                                <path d="M12 6h.01" />
+                                <path d="M12 10h.01" />
+                                <path d="M12 14h.01" />
+                                <path d="M16 10h.01" />
+                                <path d="M16 14h.01" />
+                                <path d="M8 10h.01" />
+                                <path d="M8 14h.01" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Scènes</h3>
+                        <p class="card__description">3 salles prestigieuses au cœur de Paris</p>
+                        <a href="scenes.html" class="card__link">En savoir plus <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="card card--hover">
+                        <div class="card__icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                        </div>
+                        <h3 class="card__title">Le Festival</h3>
+                        <p class="card__description">27 ans de passion pour la musique classique</p>
+                        <a href="festival.html" class="card__link">En savoir plus <span aria-hidden="true">→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Info Section -->
+        <section class="section section--muted">
+            <div class="container">
+                <h2 class="section__title">Informations Pratiques</h2>
+
+                <div class="grid grid--3">
+                    <article class="card">
+                        <h3 class="card__title-with-icon">
+                            <svg class="card__icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                            Dates
+                        </h3>
+                        <p class="card__info-highlight">15-22 Juin 2025</p>
+                        <a href="infos_pratiques.html" class="card__link">Voir plus <span
+                                aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card__title-with-icon">
+                            <svg class="card__icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Lieu
+                        </h3>
+                        <p class="card__info-text">Opéra National, Paris</p>
+                        <a href="infos_pratiques.html" class="card__link">Accès <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card__title-with-icon">
+                            <svg class="card__icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M15 5v2" />
+                                <path d="M15 11v2" />
+                                <path d="M15 17v2" />
+                                <path
+                                    d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-3a2 2 0 0 0 0-4V7a2 2 0 0 1 2-2z" />
+                            </svg>
+                            Billetterie
+                        </h3>
+                        <p class="card__info-highlight">À partir de 35€</p>
+                        <a href="#billetterie" class="btn btn--primary btn--sm">Réserver</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Nos Partenaires</h2>
+                    <p class="section__description">Ils nous font confiance et contribuent au succès du festival</p>
+                </div>
+
+                <div class="partners">
+                    <div class="partners__category">
+                        <h3 class="partners__category-title">Partenaires Institutionnels</h3>
+                        <div class="partners__grid">
+                            <div class="partners__logo" role="img" aria-label="Ville de Paris">Ville de Paris</div>
+                            <div class="partners__logo" role="img" aria-label="Île-de-France">Île-de-France</div>
+                            <div class="partners__logo" role="img" aria-label="SACEM">SACEM</div>
+                            <div class="partners__logo" role="img" aria-label="Orange">Orange</div>
+                        </div>
+                    </div>
+
+                    <div class="partners__category">
+                        <h3 class="partners__category-title">Mécènes</h3>
+                        <div class="partners__grid">
+                            <div class="partners__logo" role="img" aria-label="LVMH">LVMH</div>
+                        </div>
+                    </div>
+
+                    <div class="partners__category">
+                        <h3 class="partners__category-title">Partenaires Médias</h3>
+                        <div class="partners__grid">
+                            <div class="partners__logo" role="img" aria-label="Le Figaro">Le Figaro</div>
+                            <div class="partners__logo" role="img" aria-label="Classica">Classica</div>
+                        </div>
+                    </div>
+
+                    <div class="partners__cta">
+                        <p>Vous souhaitez devenir partenaire ?</p>
+                        <a href="contact.html" class="btn btn--outline">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <h3 class="footer__title">Chorus Symphonia</h3>
+                    <p class="footer__description">Un festival d'exception dédié à la musique classique depuis 1998</p>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__heading">Navigation</h4>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="index.html" class="footer__link">Accueil</a></li>
+                        <li class="footer__link-item"><a href="programme.html" class="footer__link">Programme</a></li>
+                        <li class="footer__link-item"><a href="artistes.html" class="footer__link">Artistes</a></li>
+                        <li class="footer__link-item"><a href="scenes.html" class="footer__link">Scènes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__heading">Informations</h4>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="festival.html" class="footer__link">Le Festival</a></li>
+                        <li class="footer__link-item"><a href="infos_pratiques.html" class="footer__link">Infos
+                                pratiques</a></li>
+                        <li class="footer__link-item"><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__heading">Newsletter</h4>
+                    <p class="footer__newsletter-text">Restez informé de nos actualités</p>
+                    <form class="footer__newsletter-form" aria-label="Formulaire d'inscription à la newsletter">
+                        <label for="newsletter-email" class="sr-only">Adresse email pour la newsletter</label>
+                        <input type="email" id="newsletter-email" placeholder="Votre email"
+                            class="footer__newsletter-input" required aria-required="true">
+                        <button type="submit" class="btn btn--primary btn--sm">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Chorus Symphonia. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/menu.js"></script>
+</body>
+
+</html>
