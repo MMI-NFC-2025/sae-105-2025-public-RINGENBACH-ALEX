@@ -4,10 +4,10 @@
 À compléter :
 
 - NOM :Ringenbach
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- PRÉNOM : Alex 
+- GROUPE : B2
+- URL du site : Netlify : /comforting-froyo-97aabe.netlify.app/
+- URL FIGMA : https://www.figma.com/design/tkovopKqsEqNKCDSsXjpKM/Maquette_Mobile_SAE-105_Alex_Ringenbach_MMI1_B2?node-id=13-2&p=f&t=Y4wk6syfqeT6SGfV-0
 
 ## Sujet
 
