@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations Pratiques | Chorus Symphonia 2025</title>
+    <meta name="description"
+        content="Toutes les informations pratiques pour profiter pleinement du festival : billetterie, horaires, accès, services">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Arimo:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Application de BEM et amélioration de l'accessibilité -->
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="header__nav" role="navigation" aria-label="Navigation principale">
+                <a href="index.html" class="header__logo">
+                    <img src="public/images/logo.jpg" alt="" class="header__logo-image" aria-hidden="true">
+                    <span>Chorus Symphonia</span>
+                </a>
+                <button class="header__menu-toggle" id="menuToggle" aria-label="Ouvrir le menu de navigation"
+                    aria-expanded="false" aria-controls="navMenu">
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                </button>
+                <ul class="header__nav-list" id="navMenu">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Accueil</a></li>
+                    <li class="header__nav-item"><a href="programme.html" class="header__nav-link">Programme</a></li>
+                    <li class="header__nav-item"><a href="artistes.html" class="header__nav-link">Artistes</a></li>
+                    <li class="header__nav-item"><a href="scenes.html" class="header__nav-link">Scènes</a></li>
+                    <li class="header__nav-item"><a href="festival.html" class="header__nav-link">Le Festival</a></li>
+                    <li class="header__nav-item"><a href="infos_pratiques.html"
+                            class="header__nav-link header__nav-link--active" aria-current="page">Infos pratiques</a>
+                    </li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <!-- Remplacement de page-header par un hero avec image -->
+        <section class="hero hero--with-image hero--small">
+            <img src="public/images/infos-hero.jpg" alt="Billetterie et informations pratiques" class="hero__background"
+                aria-hidden="true">
+            <div class="hero__overlay"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Informations Pratiques</h1>
+                    <p class="hero__subtitle">Tout ce que vous devez savoir pour profiter du festival</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <article class="content">
+                    <h2 class="content__heading">Billetterie</h2>
+                    <div class="info-box">
+                        <h3 class="info-box__title">Tarifs</h3>
+                        <ul class="info-box__list">
+                            <li class="info-box__list-item"><strong>Plein tarif :</strong> 65€ - 120€ selon les salles
+                                et emplacements</li>
+                            <li class="info-box__list-item"><strong>Tarif réduit :</strong> 35€ - 80€ (étudiants, -26
+                                ans, demandeurs d'emploi)</li>
+                            <li class="info-box__list-item"><strong>Abonnement 3 concerts :</strong> 150€ (au lieu de
+                                195€)</li>
+                            <li class="info-box__list-item"><strong>Abonnement 5 concerts :</strong> 240€ (au lieu de
+                                325€)</li>
+                            <li class="info-box__list-item"><strong>Pass Festival (8 concerts) :</strong> 380€ (au lieu
+                                de 520€)</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3 class="info-box__title">Points de vente</h3>
+                        <ul class="info-box__list">
+                            <li class="info-box__list-item"><strong>En ligne :</strong> Sur notre site web (disponible
+                                24h/24)</li>
+                            <li class="info-box__list-item"><strong>Par téléphone :</strong> 01 42 33 44 55 (du lundi au
+                                vendredi, 10h-18h)</li>
+                            <li class="info-box__list-item"><strong>Billetteries des salles :</strong> Opéra National,
+                                Théâtre des Champs-Élysées, Salle Pleyel</li>
+                            <li class="info-box__list-item"><strong>Points de vente Fnac et Carrefour
+                                    Spectacles</strong></li>
+                        </ul>
+                    </div>
+
+                    <h2 class="content__heading">Dates et Horaires</h2>
+                    <div class="info-box">
+                        <p class="info-box__text"><strong>Du 15 au 22 juin 2025</strong></p>
+                        <p class="info-box__text">Tous les concerts commencent à <time datetime="20:00">20h00</time>.
+                            Nous vous recommandons d'arriver au moins 30 minutes avant le début du concert.</p>
+                        <p class="info-box__text">Les portes ferment 5 minutes après le début du concert. Les
+                            retardataires ne pourront accéder à la salle qu'à l'entracte.</p>
+                    </div>
+
+                    <h2 class="content__heading">Accès et Transports</h2>
+                    <div class="info-box">
+                        <h3 class="info-box__title">Opéra National de Paris</h3>
+                        <p class="info-box__text"><strong>Adresse :</strong> Place de l'Opéra, 75009 Paris</p>
+                        <p class="info-box__text"><strong>Métro :</strong> Opéra (lignes 3, 7, 8)</p>
+                        <p class="info-box__text"><strong>RER :</strong> Auber (RER A)</p>
+                        <p class="info-box__text"><strong>Bus :</strong> 20, 21, 27, 29, 42, 52, 53, 66, 68, 81, 95</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3 class="info-box__title">Théâtre des Champs-Élysées</h3>
+                        <p class="info-box__text"><strong>Adresse :</strong> 15 Avenue Montaigne, 75008 Paris</p>
+                        <p class="info-box__text"><strong>Métro :</strong> Alma-Marceau (ligne 9)</p>
+                        <p class="info-box__text"><strong>RER :</strong> Pont de l'Alma (RER C)</p>
+                        <p class="info-box__text"><strong>Bus :</strong> 42, 63, 72, 80, 92</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3 class="info-box__title">Salle Pleyel</h3>
+                        <p class="info-box__text"><strong>Adresse :</strong> 252 Rue du Faubourg Saint-Honoré, 75008
+                            Paris</p>
+                        <p class="info-box__text"><strong>Métro :</strong> Ternes (ligne 2)</p>
+                        <p class="info-box__text"><strong>RER :</strong> Charles de Gaulle-Étoile (RER A)</p>
+                        <p class="info-box__text"><strong>Bus :</strong> 30, 31, 43, 92, 93</p>
+                    </div>
+
+                    <h2 class="content__heading">Services et Accessibilité</h2>
+                    <div class="info-box">
+                        <ul class="info-box__list">
+                            <li class="info-box__list-item"><strong>Vestiaire :</strong> Service gratuit dans toutes les
+                                salles</li>
+                            <li class="info-box__list-item"><strong>Restauration :</strong> Bars et espaces de
+                                restauration sur place (réservation conseillée)</li>
+                            <li class="info-box__list-item"><strong>Accessibilité PMR :</strong> Toutes nos salles sont
+                                accessibles aux personnes à mobilité réduite. Merci de nous signaler votre venue lors de
+                                la réservation</li>
+                            <li class="info-box__list-item"><strong>Boucle magnétique :</strong> Disponible pour les
+                                personnes malentendantes</li>
+                            <li class="info-box__list-item"><strong>Programmes en braille :</strong> Sur demande au
+                                moins 48h à l'avance</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="content__heading">Conseils Pratiques</h2>
+                    <div class="info-box">
+                        <ul class="info-box__list">
+                            <li class="info-box__list-item"><strong>Tenue vestimentaire :</strong> Tenue correcte exigée
+                                (pas de tenue décontractée)</li>
+                            <li class="info-box__list-item"><strong>Photos et vidéos :</strong> Interdites pendant les
+                                concerts</li>
+                            <li class="info-box__list-item"><strong>Téléphones portables :</strong> À éteindre
+                                impérativement</li>
+                            <li class="info-box__list-item"><strong>Retards :</strong> Entrée uniquement à l'entracte
+                            </li>
+                            <li class="info-box__list-item"><strong>Enfants :</strong> Concerts accessibles à partir de
+                                8 ans</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="content__heading">Contact Billetterie</h2>
+                    <div class="info-box">
+                        <p class="info-box__text"><strong>Téléphone :</strong> <a href="tel:+33142334455">01 42 33 44
+                                55</a></p>
+                        <p class="info-box__text"><strong>Email :</strong> <a
+                                href="mailto:billetterie@chorussymphonia.fr">billetterie@chorussymphonia.fr</a></p>
+                        <p class="info-box__text"><strong>Horaires :</strong> Du lundi au vendredi, 10h-18h</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <h3 class="footer__title">Chorus Symphonia</h3>
+                    <p class="footer__description">Un festival d'exception dédié à la musique classique depuis 1998</p>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__heading">Navigation</h4>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="index.html" class="footer__link">Accueil</a></li>
+                        <li class="footer__link-item"><a href="programme.html" class="footer__link">Programme</a></li>
+                        <li class="footer__link-item"><a href="artistes.html" class="footer__link">Artistes</a></li>
+                        <li class="footer__link-item"><a href="scenes.html" class="footer__link">Scènes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__heading">Informations</h4>
+                    <ul class="footer__links">
+                        <li class="footer__link-item"><a href="festival.html" class="footer__link">Le Festival</a></li>
+                        <li class="footer__link-item"><a href="infos_pratiques.html" class="footer__link">Infos
+                                pratiques</a></li>
+                        <li class="footer__link-item"><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__heading">Newsletter</h4>
+                    <p class="footer__newsletter-text">Restez informé de nos actualités</p>
+                    <form class="footer__newsletter-form" aria-label="Formulaire d'inscription à la newsletter">
+                        <label for="newsletter-email-infos" class="sr-only">Adresse email pour la newsletter</label>
+                        <input type="email" id="newsletter-email-infos" placeholder="Votre email"
+                            class="footer__newsletter-input" required aria-required="true">
+                        <button type="submit" class="btn btn--primary btn--sm">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 Chorus Symphonia. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/menu.js"></script>
+</body>
+
+</html>
