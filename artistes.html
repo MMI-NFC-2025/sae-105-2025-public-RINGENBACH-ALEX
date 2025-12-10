@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistes | Chorus Symphonia 2025</title>
+    <meta name="description"
+        content="Découvrez les artistes exceptionnels qui participent au festival Chorus Symphonia 2025">
+    <!-- Import uniquement du fichier style.css principal -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Modification de la police pour utiliser Arimo -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Arimo:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Application de BEM et amélioration de l'accessibilité -->
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="header__nav" role="navigation" aria-label="Navigation principale">
+                <!-- Ajout du logo image -->
+                <a href="index.html" class="header__logo">
+                    <img src="public/images/logo.jpg" alt="" class="header__logo-image" aria-hidden="true">
+                    <span>Chorus Symphonia</span>
+                </a>
+                <button class="header__menu-toggle" id="menuToggle" aria-label="Ouvrir le menu de navigation"
+                    aria-expanded="false" aria-controls="navMenu">
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                </button>
+                <ul class="header__nav-list" id="navMenu">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Accueil</a></li>
+                    <li class="header__nav-item"><a href="programme.html" class="header__nav-link">Programme</a></li>
+                    <li class="header__nav-item"><a href="artistes.html"
+                            class="header__nav-link header__nav-link--active" aria-current="page">Artistes</a></li>
+                    <li class="header__nav-item"><a href="scenes.html" class="header__nav-link">Scènes</a></li>
+                    <li class="header__nav-item"><a href="festival.html" class="header__nav-link">Le Festival</a></li>
+                    <li class="header__nav-item"><a href="infos_pratiques.html" class="header__nav-link">Infos
+                            pratiques</a></li>
+                    <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <!-- Remplacement de page-header par un hero avec image -->
+        <section class="hero hero--with-image hero--small">
+            <!-- Remplacement du placeholder par une image générée -->
+            <img src="public/images/artistes-hero.jpg" alt="Artistes de musique classique sur scène"
+                class="hero__background" aria-hidden="true">
+            <div class="hero__overlay"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Artistes</h1>
+                    <p class="hero__subtitle">Rencontrez les artistes exceptionnels qui feront vibrer le festival</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid grid--3">
+                    <!-- Application de la nomenclature BEM pour les cartes d'artistes -->
+                    <article class="artist">
+                        <div class="artist__image">
+                            <img src="/placeholder.svg?height=300&width=300"
+                                alt="Portrait de Gustavo Dudamel, chef d'orchestre">
+                        </div>
+                        <div class="artist__info">
+                            <h3 class="artist__name">Gustavo Dudamel</h3>
+                            <p class="artist__role">Chef d'orchestre</p>
+                            <p class="artist__description">Directeur musical du Los Angeles Philharmonic, Gustavo
+                                Dudamel est reconnu comme l'un des chefs d'orchestre les plus charismatiques de sa
+                                génération.</p>
+                            <button class="btn btn--secondary btn--small artist__btn" data-artist="dudamel">En savoir
+                                plus</button>
+                        </div>
+                    </article>
+
+                    <article class="artist">
+                        <div class="artist__image">
+                            <img src="/placeholder.svg?height=300&width=300"
+                                alt="Portrait d'Anne-Sophie Mutter, violoniste">
+                        </div>
+                        <div class="artist__info">
+                            <h3 class="artist__name">Anne-Sophie Mutter</h3>
+                            <p class="artist__role">Violoniste</p>
+                            <p class="artist__description">Icône du violon, Anne-Sophie Mutter est reconnue mondialement
+                                pour sa technique impeccable et son interprétation passionnée.</p>
+                            <button class="btn btn--secondary btn--small artist__btn" data-artist="mutter">En savoir
+                                plus</button>
+                        </div>
+                    </article>
+
+                    <article class="artist">
+                        <div class="artist__image">
+                            <img src="/placeholder.svg?height=300&width=300" alt="Portrait de Lang Lang, pianiste">
+                        </div>
+                        <div class="artist__info">
+                            <h3 class="artist__name">Lang Lang</h3>
+                            <p class="artist__role">Pianiste</p>
+                            <p class="artist__description">Virtuose chinois, Lang Lang captive le public du monde entier
+                                avec son jeu expressif et sa présence scénique exceptionnelle.</p>
+                            <button class="btn btn--secondary btn--small artist__btn" data-artist="langlang">En savoir
+                                plus</button>
+                        </div>
+                    </article>
+
+                    <article class="artist">
+                        <div class="artist__image">
+                            <img src="/placeholder.svg?height=300&width=300"
+                                alt="Portrait de Simon Rattle, chef d'orchestre">
+                        </div>
+                        <div class="artist__info">
+                            <h3 class="artist__name">Simon Rattle</h3>
+                            <p class="artist__role">Chef d'orchestre</p>
+                            <p class="artist__description">Ancien directeur musical du Berlin Philharmonic, Sir Simon
+                                Rattle est l'un des chefs d'orchestre les plus respectés au monde.</p>
+                            <button class="btn btn--secondary btn--small artist__btn" data-artist="rattle">En savoir
+                                plus</button>
+                        </div>
+                    </article>
+
+                    <article class="artist">
+                        <div class="artist__image">
+                            <img src="/placeholder.svg?height=300&width=300"
+                                alt="Portrait d'Esa-Pekka Salonen, chef d'orchestre">
+                        </div>
+                        <div class="artist__info">
+                            <h3 class="artist__name">Esa-Pekka Salonen</h3>
+                            <p class="artist__role">Chef d'orchestre</p>
+                            <p class="artist__description">Compositeur et chef d'orchestre finlandais, Salonen apporte
+                                une vision moderne et audacieuse au répertoire classique.</p>
+                            <button class="btn btn--secondary btn--small artist__btn" data-artist="salonen">En savoir
+                                plus</button>
+                        </div>
+                    </article>
+
+                    <article class="artist">
+                        <div class="artist__image">
+                            <img src="/placeholder.svg?height=300&width=300"
+                                alt="Portrait de Daniel Barenboim, chef d'orchestre et pianiste">
+                        </div>
+                        <div class="artist__info">
+                            <h3 class="artist__name">Daniel Barenboim</h3>
+                            <p class="artist__role">Chef d'orchestre et pianiste</p>
+                            <p class="artist__description">Légende vivante de la musique classique, Daniel Barenboim
+                                excelle tant au piano qu'à la direction d'orchestre.</p>
+                            <button class="btn btn--secondary btn--small artist__btn" data-artist="barenboim">En savoir
+                                plus</button>
+                        </div>
+                    </article>
+
+                    <article class="artist">
+                        <div class="artist__image">
+                            <img src="/placeholder.svg?height=300&width=300" alt="Portrait d'Hilary Hahn, violoniste">
+                        </div>
+                        <div class="artist__info">
+                            <h3 class="artist__name">Hilary Hahn</h3>
+                            <p class="artist__role">Violoniste</p>
+                            <p class="artist__description">Violoniste américaine primée, Hilary Hahn est réputée pour sa
+                                musicalité profonde et sa technique parfaite.</p>
+                            <button class="btn btn--secondary btn--small artist__btn" data-artist="hahn">En savoir
+                                plus</button>
+                        </div>
+                    </article>
+
+                    <article class="artist">
+                        <div class="artist__image">
+                            <img src="/placeholder.svg?height=300&width=300"
+                                alt="Portrait de Philippe Herreweghe, chef d'orchestre">
+                        </div>
+                        <div class="artist__info">
+                            <h3 class="artist__name">Philippe Herreweghe</h3>
+                            <p class="artist__role">Chef d'orchestre</p>
+                            <p class="artist__description">Spécialiste de la musique baroque et classique, Philippe
+                                Herreweghe apporte authenticité et sensibilité à ses interprétations.</p>
+                            <button class="btn btn--secondary btn--small artist__btn" data-artist="herreweghe">En savoir
+                                plus</button>
+                        </div>
+                    </article>
+
+                    <article class="artist">
+                        <div class="artist__image">
+                            <img src="/placeholder.svg?height=300&width=300"
+                                alt="Portrait de Valery Gergiev, chef d'orchestre">
+                        </div>
+                        <div class="artist__info">
+                            <h3 class="artist__name">Valery Gergiev</h3>
+                            <p class="artist__role">Chef d'orchestre</p>
+                            <p class="artist__description">Directeur du Mariinsky Orchestra, Gergiev est reconnu pour
+                                ses interprétations magistrales du répertoire russe.</p>
+                            <button class="btn btn--secondary btn--small artist__btn" data-artist="gergiev">En savoir
+                                plus</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ajout de la modal pour afficher les détails de l'artiste -->
+    <div class="modal" id="artistModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal__overlay" aria-label="Fermer la fenêtre"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Fermer la fenêtre">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal__body">
+                <div class="modal__image-wrapper">
+                    <img src="/placeholder.svg" alt="" class="modal__image" id="modalImage">
+                </div>
+                <div class="modal__info">
+                    <h2 class="modal__title" id="modalTitle"></h2>
+                    <p class="modal__role" id="modalRole"></p>
+                    <div class="modal__description" id="modalDescription"></div>
+                    <div class="modal__performances">
+                        <h3 class="modal__subtitle">Représentations</h3>
+                        <ul class="modal__performance-list" id="modalPerformances"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-title">Chorus Symphonia</h3>
+                    <p class="footer-description">Un festival d'exception dédié à la musique classique depuis 1998</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="artistes.html">Artistes</a></li>
+                        <li><a href="scenes.html">Scènes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Informations</h4>
+                    <ul class="footer-links">
+                        <li><a href="festival.html">Le Festival</a></li>
+                        <li><a href="infos_pratiques.html">Infos pratiques</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p class="footer-newsletter-text">Restez informé de nos actualités</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary btn-sm">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chorus Symphonia. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/menu.js"></script>
+    <script src="src/js/artist-modal.js"></script>
+</body>
+
+</html>
