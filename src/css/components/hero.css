@@ -1,8 +1,5 @@
-/* Application de la méthodologie BEM pour le hero */
-
-/* Hero Block */
 .hero {
-    /* Utilisation des nouvelles variables de couleurs */
+
     background: linear-gradient(135deg, var(--ivoir) 0%, var(--doré-clair) 100%);
     padding: 80px 0;
     min-height: 500px;
@@ -11,7 +8,6 @@
     position: relative;
 }
 
-/* Ajout du modificateur pour hero avec image de fond */
 .hero--with-image {
     position: relative;
     overflow: hidden;
@@ -39,7 +35,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* Overlay avec la nouvelle couleur noire */
     background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
@@ -69,7 +64,6 @@
     font-family: var(--font-serif);
     font-size: 3.5rem;
     font-weight: 700;
-    /* Nouvelle couleur */
     color: var(--noir);
     margin-bottom: 1.5rem;
     line-height: 1.2;
@@ -77,7 +71,6 @@
 
 .hero__subtitle {
     font-size: 1.5rem;
-    /* Nouvelle couleur */
     color: var(--gris-claire);
     margin-bottom: 2.5rem;
     line-height: 1.4;
@@ -112,9 +105,6 @@
     flex-wrap: wrap;
 }
 
-/* Ajout des styles pour le contenu article et les info-box */
-
-/* Content Block - pour les pages avec du contenu textuel */
 .content {
     max-width: 900px;
     margin: 0 auto;
@@ -160,7 +150,6 @@
     color: var(--noir);
 }
 
-/* Stats Block */
 .stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -192,7 +181,6 @@
     letter-spacing: 1px;
 }
 
-/* Info Box Block */
 .info-box {
     background-color: var(--doré-clair);
     border-left: 4px solid var(--noir);
@@ -254,7 +242,6 @@
     color: var(--noir);
 }
 
-/* Screen reader only utility class */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -265,52 +252,4 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
-}
-
-@media (max-width: 768px) {
-    .hero {
-        padding: 60px 0;
-        min-height: 400px;
-    }
-
-    .hero--small {
-        min-height: 300px;
-        padding: 40px 0;
-    }
-
-    .hero__title {
-        font-size: 2.5rem;
-    }
-
-    .hero__subtitle {
-        font-size: 1.25rem;
-    }
-
-    .hero__info {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .hero__actions {
-        flex-direction: column;
-    }
-
-    /* Ajout des styles responsive pour le contenu */
-    .content__heading {
-        font-size: 1.5rem;
-        margin-top: 30px;
-    }
-
-    .stats {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .stats__number {
-        font-size: 2.5rem;
-    }
-
-    .info-box {
-        padding: 20px;
-    }
 }

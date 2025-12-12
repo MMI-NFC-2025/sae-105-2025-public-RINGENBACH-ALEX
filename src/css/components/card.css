@@ -1,8 +1,5 @@
-/* Application de la méthodologie BEM pour les cartes */
-
-/* Card Block */
 .card {
-    /* Card blanche avec bordure dorée */
+
     background-color: white;
     border: 2px solid var(--doré-clair);
     border-radius: 12px;
@@ -11,7 +8,7 @@
 }
 
 .card__icon {
-    /* Icône avec fond doré */
+
     background-color: var(--doré-clair);
     border-radius: 12px;
     padding: 20px;
@@ -45,10 +42,9 @@
 .card__link {
     color: var(--or-profond);
     font-weight: 600;
-    /* Suppression de la transition */
+
 }
 
-/* Suppression du :hover sur card__link */
 
 .card__title-with-icon {
     display: flex;
@@ -78,9 +74,6 @@
     margin-bottom: 15px;
 }
 
-/* Ajout des styles pour les cards de programme */
-
-/* Filters Section */
 .section--filters {
     padding: 20px 0;
     background-color: white;
@@ -113,13 +106,11 @@
     color: var(--noir);
 }
 
-/* Program Grid */
 .program-grid {
     display: grid;
     gap: 20px;
 }
 
-/* Program Card Block */
 .program-card {
     background-color: white;
     border: 2px solid var(--doré-clair);
@@ -134,7 +125,6 @@
     display: none;
 }
 
-/* Program Card Header */
 .program-card__header {
     display: flex;
     justify-content: space-between;
@@ -169,7 +159,6 @@
     color: var(--or-profond);
 }
 
-/* Program Card Info */
 .program-card__info {
     display: flex;
     flex-direction: column;
@@ -191,7 +180,6 @@
     flex-shrink: 0;
 }
 
-/* Program Card Details */
 .program-card__details {
     display: flex;
     flex-direction: column;
@@ -221,7 +209,6 @@
     margin: 0;
 }
 
-/* Ajout des styles pour les statistiques */
 .stats-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -250,7 +237,6 @@
     margin: 0;
 }
 
-/* Ajout des styles pour les valeurs */
 .values-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -296,7 +282,6 @@
     margin: 0;
 }
 
-/* Ajout des styles pour l'équipe */
 .team-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -349,35 +334,6 @@
     margin: 0;
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-    .program-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .filters {
-        justify-content: center;
-    }
-
-    .program-card__title {
-        font-size: 1.5rem;
-    }
-
-    /* Responsive pour les nouvelles grilles */
-    .stats-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .values-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Partners Mini Card */
 .partners__logo {
     background-color: var(--ivoir);
     border: 2px solid var(--doré-clair);
