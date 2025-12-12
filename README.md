@@ -3,7 +3,7 @@
 
 À compléter :
 
-- NOM :Ringenbach
+- NOM :RINGENBACH
 - PRÉNOM : Alex 
 - GROUPE : B2
 - URL du site : Netlify : /comforting-froyo-97aabe.netlify.app/  (Je n'ai pas de nom de domaine infomaniak, je n'ai donc pas pus le mettre en ligne. Je vais par contre pouvoir le prendre pour la rentrée 2026.)

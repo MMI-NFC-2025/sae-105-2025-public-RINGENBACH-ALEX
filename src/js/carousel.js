@@ -1,4 +1,4 @@
-/*Visible sur la page details de l'artiste : */
+/*Visible sur la page details de l'artiste : https://comforting-froyo-97aabe.netlify.app/artiste_detail */
 
 
 const track = document.getElementById("galleryTrack");
