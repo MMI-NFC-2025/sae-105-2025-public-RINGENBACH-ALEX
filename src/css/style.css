@@ -23,5 +23,4 @@
 @import "components/menu.css";
 
 /* Ajout de l'import pour le composant modal */
-@import "components/modal.css";
 @import "components/faq.css";

@@ -1,5 +1,4 @@
 .card {
-
     background-color: white;
     border: 2px solid var(--doré-clair);
     border-radius: 12px;
@@ -8,7 +7,6 @@
 }
 
 .card__icon {
-
     background-color: var(--doré-clair);
     border-radius: 12px;
     padding: 20px;
@@ -42,9 +40,7 @@
 .card__link {
     color: var(--or-profond);
     font-weight: 600;
-
 }
-
 
 .card__title-with-icon {
     display: flex;
@@ -357,4 +353,157 @@
     max-width: 100%;
     max-height: 100px;
     object-fit: contain;
+}
+
+/* Added artist detail styles */
+.header--detail {
+    background-color: var(--noir);
+}
+
+.header__nav--simple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--doré-clair);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.header__back-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.header__logo--small {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.artist-hero {
+    position: relative;
+    padding: 60px 0 40px;
+    background-color: var(--noir);
+}
+
+.artist-hero__image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.artist-hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.artist-hero__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.artist-hero__name {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 10px 0;
+}
+
+.artist-hero__role {
+    font-size: 1.25rem;
+    color: var(--doré-clair);
+    margin: 0;
+}
+
+.content-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--noir);
+    margin-bottom: 20px;
+}
+
+.gallery {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.gallery__main {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 2px solid var(--doré-clair);
+}
+
+.gallery__image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery__controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--doré-clair);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.gallery__button svg {
+    width: 24px;
+    height: 24px;
+    color: var(--noir);
+}
+
+.footer__contact {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer__contact p {
+    margin: 5px 0;
+}
+
+.footer__legal-link {
+    color: var(--doré-clair);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+    .artist-hero__name {
+        font-size: 3rem;
+    }
+
+    .artist-hero__role {
+        font-size: 1.5rem;
+    }
 }
