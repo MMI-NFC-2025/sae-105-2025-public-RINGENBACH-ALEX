@@ -1,0 +1,43 @@
+/* Page 404 */
+.page-404 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-404__card {
+    background: var(--doré-clair);
+    border: 2px solid var(--or-profond);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+}
+
+.page-404__title {
+    color: var(--or-profond);
+}
+
+.page-404__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.page-404__input {
+    background: var(--ivoir);
+    border: 1px solid var(--gris-claire);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+}
+
+.page-404__button {
+    background: var(--or-profond);
+    color: var(--noir);
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
