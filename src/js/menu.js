@@ -1,3 +1,7 @@
+
+/* visible sur toutes les pages : https://comforting-froyo-97aabe.netlify.app/  */
+
+
 // Mobile Menu Toggle avec nomenclature BEM
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("menuToggle")
