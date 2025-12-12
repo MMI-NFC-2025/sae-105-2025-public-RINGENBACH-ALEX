@@ -1,0 +1,316 @@
+/* Application de la méthodologie BEM pour le hero */
+
+/* Hero Block */
+.hero {
+    /* Utilisation des nouvelles variables de couleurs */
+    background: linear-gradient(135deg, var(--ivoir) 0%, var(--doré-clair) 100%);
+    padding: 80px 0;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Ajout du modificateur pour hero avec image de fond */
+.hero--with-image {
+    position: relative;
+    overflow: hidden;
+    background: none;
+}
+
+.hero--small {
+    min-height: 400px;
+    padding: 60px 0;
+}
+
+.hero__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Overlay avec la nouvelle couleur noire */
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero--with-image .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero--with-image .hero__title,
+.hero--with-image .hero__subtitle,
+.hero--with-image .hero__info-item {
+    color: var(--doré-clair);
+}
+
+.hero--with-image .hero__icon {
+    color: var(--or-profond);
+}
+
+.hero__content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero__title {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    font-weight: 700;
+    /* Nouvelle couleur */
+    color: var(--noir);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero__subtitle {
+    font-size: 1.5rem;
+    /* Nouvelle couleur */
+    color: var(--gris-claire);
+    margin-bottom: 2.5rem;
+    line-height: 1.4;
+}
+
+.hero__info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.hero__info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.125rem;
+    color: var(--gris-claire);
+}
+
+.hero__icon {
+    width: 24px;
+    height: 24px;
+    color: var(--noir);
+}
+
+.hero__actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Ajout des styles pour le contenu article et les info-box */
+
+/* Content Block - pour les pages avec du contenu textuel */
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.content__heading {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: var(--noir);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.content__text {
+    color: var(--gris-claire);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.content__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content__list-item {
+    color: var(--gris-claire);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.content__list-item::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--noir);
+    font-weight: 700;
+}
+
+.content__list-item strong {
+    color: var(--noir);
+}
+
+/* Stats Block */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.stats__item {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--doré-clair);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats__number {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--noir);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.stats__label {
+    color: var(--gris-claire);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Info Box Block */
+.info-box {
+    background-color: var(--doré-clair);
+    border-left: 4px solid var(--noir);
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.info-box__title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    color: var(--noir);
+    margin-bottom: 15px;
+}
+
+.info-box__text {
+    color: var(--gris-claire);
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.info-box__text:last-child {
+    margin-bottom: 0;
+}
+
+.info-box__text strong {
+    color: var(--noir);
+}
+
+.info-box__text a {
+    color: var(--noir);
+    text-decoration: underline;
+}
+
+.info-box__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-box__list-item {
+    color: var(--gris-claire);
+    line-height: 1.8;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.info-box__list-item::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--noir);
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.info-box__list-item strong {
+    color: var(--noir);
+}
+
+/* Screen reader only utility class */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+        min-height: 400px;
+    }
+
+    .hero--small {
+        min-height: 300px;
+        padding: 40px 0;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero__info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+    }
+
+    /* Ajout des styles responsive pour le contenu */
+    .content__heading {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stats__number {
+        font-size: 2.5rem;
+    }
+
+    .info-box {
+        padding: 20px;
+    }
+}

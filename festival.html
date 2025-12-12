@@ -14,11 +14,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Arimo:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="/assets/icons/favicons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicons/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/icons/favicons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicons/apple-touch-icon.png" />
-    <link rel="manifest" href="/assets/icons/favicons/site.webmanifest" />
 </head>
 
 <body>
@@ -28,7 +23,7 @@
             <nav class="header__nav" role="navigation" aria-label="Navigation principale">
                 <!-- Ajout du logo image -->
                 <a href="index.html" class="header__logo">
-                    <img src="assets/icons/logo.svg" alt="" class="header__logo-image" aria-hidden="true">
+                    <img src="public/images/logo.jpg" alt="" class="header__logo-image" aria-hidden="true">
                     <span>Chorus Symphonia</span>
                 </a>
                 <button class="header__menu-toggle" id="menuToggle" aria-label="Ouvrir le menu de navigation"
@@ -38,10 +33,12 @@
                     <span class="header__menu-line"></span>
                 </button>
                 <ul class="header__nav-list" id="navMenu">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Accueil</a></li>
                     <li class="header__nav-item"><a href="programme.html" class="header__nav-link">Programme</a></li>
                     <li class="header__nav-item"><a href="artistes.html" class="header__nav-link">Artistes</a></li>
                     <li class="header__nav-item"><a href="scenes.html" class="header__nav-link">Scènes</a></li>
-                    <li class="header__nav-item"><a href="festival.html" class="header__nav-link">Le Festival</a></li>
+                    <li class="header__nav-item"><a href="festival.html"
+                            class="header__nav-link header__nav-link--active" aria-current="page">Le Festival</a></li>
                     <li class="header__nav-item"><a href="infos_pratiques.html" class="header__nav-link">Infos
                             pratiques</a></li>
                     <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
@@ -51,100 +48,214 @@
     </header>
 
     <main role="main">
-        <!-- Remplacement de page-header par un hero avec image -->
+        <!-- Nouveau hero avec image d'orchestre -->
         <section class="hero hero--with-image hero--small">
-            <!-- Remplacement du placeholder par une image générée -->
-            <img src="assets/img/hero_festival.png" alt="Célébration du festival de musique classique"
-                class="hero__background" aria-hidden="true" loading="lazy">
+            <img src="public/images/festival-hero-about.jpg" alt="" class="hero__background" aria-hidden="true">
             <div class="hero__overlay"></div>
             <div class="container">
                 <div class="hero__content">
-                    <h1 class="hero__title">Le Festival</h1>
-                    <p class="hero__subtitle">27 ans de passion pour la musique classique</p>
+                    <p class="hero__label">Le Festival</p>
+                    <h1 class="hero__title">27 ans de passion pour la musique classique</h1>
                 </div>
             </div>
         </section>
 
+        <!-- Section Notre Histoire avec texte descriptif -->
+        <section class="section section--light">
+            <div class="container">
+                <h2 class="section__title">Notre Histoire</h2>
+                <div class="content">
+                    <p class="content__text">
+                        Fondé en 1998, le Festival Chorus Symphonia est né de la volonté de créer un événement
+                        culturel d'envergure internationale à Paris, célébrant le patrimoine musical classique tout
+                        en offrant une scène aux talents contemporains.
+                    </p>
+                    <p class="content__text">
+                        Au fil des années, le festival s'est imposé comme un rendez-vous incontournable pour les
+                        amateurs de musique classique. Chaque édition rassemble plus de 15 000 spectateurs venus du
+                        monde entier pour découvrir ou redécouvrir les plus belles œuvres du répertoire.
+                    </p>
+                    <p class="content__text">
+                        Grâce à la qualité de sa programmation et à l'excellence de son organisation, Chorus
+                        Symphonia a accueilli les plus grands orchestres et solistes internationaux, créant des
+                        moments inoubliables dans les salles les plus prestigieuses de Paris.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section statistiques avec cards -->
         <section class="section">
             <div class="container">
-                <section class="content">
-                    <h2 class="content__heading">Notre Histoire</h2>
-                    <p class="content__text">
-                        Fondé en 1998, Chorus Symphonia est né de la volonté de rendre la musique classique accessible à
-                        tous
-                        dans un cadre d'exception. Depuis 27 ans, le festival s'est imposé comme un rendez-vous
-                        incontournable
-                        pour les mélomanes et les amateurs de découvertes musicales.
-                    </p>
-                    <p class="content__text">
-                        Chaque année en juin, pendant une semaine, Paris vibre au rythme des plus grandes œuvres du
-                        répertoire
-                        classique, interprétées par les artistes les plus renommés de la scène internationale. Des
-                        salles
-                        prestigieuses comme l'Opéra National de Paris, le Théâtre des Champs-Élysées et la Salle Pleyel
-                        accueillent ces concerts exceptionnels.
-                    </p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <p class="stat-card__number">27 ans</p>
+                        <p class="stat-card__label">d'histoire</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-card__number">250+</p>
+                        <p class="stat-card__label">artistes accueillis</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-card__number">400 000+</p>
+                        <p class="stat-card__label">spectateurs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <h2 class="content__heading">Notre Vision</h2>
-                    <p class="content__text">
-                        Chorus Symphonia s'engage à promouvoir l'excellence musicale tout en favorisant l'accès à la
-                        culture
-                        pour tous les publics. Notre programmation équilibre les chefs-d'œuvre du répertoire et les
-                        découvertes,
-                        les artistes consacrés et les jeunes talents prometteurs.
-                    </p>
-                    <p class="content__text">
-                        Nous croyons que la musique classique est un patrimoine vivant qui doit être partagé et
-                        transmis.
-                        C'est pourquoi nous proposons également des rencontres avec les artistes, des conférences et des
-                        ateliers pédagogiques pour tous les âges.
-                    </p>
-
-                    <h2 class="content__heading">Les Chiffres Clés</h2>
-                    <div class="stats">
-                        <div class="stats__item">
-                            <div class="stats__number">27</div>
-                            <div class="stats__label">Éditions</div>
+        <!-- Section Nos Valeurs avec cards et icônes -->
+        <section class="section section--light">
+            <div class="container">
+                <h2 class="section__title">Nos Valeurs</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9 18V5l12-2v13"></path>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <circle cx="18" cy="16" r="3"></circle>
+                            </svg>
                         </div>
-                        <div class="stats__item">
-                            <div class="stats__number">8</div>
-                            <div class="stats__label">Concerts</div>
-                        </div>
-                        <div class="stats__item">
-                            <div class="stats__number">3</div>
-                            <div class="stats__label">Salles</div>
-                        </div>
-                        <div class="stats__item">
-                            <div class="stats__number">15000</div>
-                            <div class="stats__label">Spectateurs</div>
-                        </div>
+                        <h3 class="value-card__title">Excellence Artistique</h3>
+                        <p class="value-card__description">
+                            Proposer une programmation de qualité exceptionnelle avec les meilleurs artistes
+                            internationaux.
+                        </p>
                     </div>
 
-                    <h2 class="content__heading">Notre Équipe</h2>
-                    <p class="content__text">
-                        Le festival est dirigé par une équipe passionnée de professionnels de la musique et de la
-                        culture,
-                        sous la direction artistique de Claire Beaumont, ancienne violoniste au sein de l'Orchestre de
-                        Paris.
-                        Notre comité artistique réunit des personnalités reconnues du monde musical pour garantir la
-                        qualité
-                        et la diversité de notre programmation.
-                    </p>
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Accessibilité</h3>
+                        <p class="value-card__description">
+                            Rendre la musique classique accessible à tous les publics, des mélomanes aux néophytes.
+                        </p>
+                    </div>
 
-                    <h2 class="content__heading">Nos Valeurs</h2>
-                    <ul class="content__list">
-                        <li class="content__list-item"><strong>Excellence artistique :</strong> Nous invitons les
-                            meilleurs artistes internationaux pour offrir des concerts d'exception</li>
-                        <li class="content__list-item"><strong>Accessibilité :</strong> Nous proposons des tarifs
-                            adaptés et des actions de médiation pour toucher tous les publics</li>
-                        <li class="content__list-item"><strong>Innovation :</strong> Nous explorons de nouvelles formes
-                            de présentation et d'interaction avec la musique classique</li>
-                        <li class="content__list-item"><strong>Transmission :</strong> Nous développons des programmes
-                            pédagogiques pour les jeunes générations</li>
-                        <li class="content__list-item"><strong>Rayonnement :</strong> Nous contribuons au prestige
-                            culturel de Paris et de la France</li>
-                    </ul>
-                </section>
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Transmission</h3>
+                        <p class="value-card__description">
+                            Favoriser la découverte et l'apprentissage de la musique classique auprès des jeunes
+                            générations.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 2v20M2 12h20"></path>
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Innovation</h3>
+                        <p class="value-card__description">
+                            Proposer des formats innovants tout en respectant les traditions du répertoire classique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Notre Équipe avec cards membres -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Notre Équipe</h2>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="team-card__name">Élisabeth Rousseau</h3>
+                        <p class="team-card__role">Directrice Artistique</p>
+                        <p class="team-card__description">
+                            Passionnée de musique classique depuis l'enfance, elle dirige le festival depuis sa
+                            création.
+                        </p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="team-card__name">Marc Fontaine</h3>
+                        <p class="team-card__role">Directeur Général</p>
+                        <p class="team-card__description">
+                            Expert en gestion culturelle, il assure la coordination de l'ensemble du festival.
+                        </p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="team-card__name">Claire Dubois</h3>
+                        <p class="team-card__role">Responsable de la Programmation</p>
+                        <p class="team-card__description">
+                            Violoniste de formation, elle sélectionne les artistes et compose le programme.
+                        </p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="team-card__name">Antoine Martin</h3>
+                        <p class="team-card__role">Responsable Communication</p>
+                        <p class="team-card__description">
+                            Spécialiste du marketing culturel, il assure la visibilité du festival.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -160,6 +271,7 @@
                 <div class="footer__section">
                     <h4 class="footer__heading">Navigation</h4>
                     <ul class="footer__links">
+                        <li class="footer__link-item"><a href="index.html" class="footer__link">Accueil</a></li>
                         <li class="footer__link-item"><a href="programme.html" class="footer__link">Programme</a></li>
                         <li class="footer__link-item"><a href="artistes.html" class="footer__link">Artistes</a></li>
                         <li class="footer__link-item"><a href="scenes.html" class="footer__link">Scènes</a></li>

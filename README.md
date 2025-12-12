@@ -6,7 +6,7 @@
 - NOM :Ringenbach
 - PRÉNOM : Alex 
 - GROUPE : B2
-- URL du site : Netlify : /comforting-froyo-97aabe.netlify.app/
+- URL du site : Netlify : /comforting-froyo-97aabe.netlify.app/  (Je n'ai pas de nom de domaine infomaniak, je n'ai donc pas pus le mettre en ligne. Je vais par contre pouvoir le prendre pour la rentrée 2026.)
 - URL FIGMA : https://www.figma.com/design/tkovopKqsEqNKCDSsXjpKM/Maquette_Mobile_SAE-105_Alex_Ringenbach_MMI1_B2?node-id=13-2&p=f&t=Y4wk6syfqeT6SGfV-0
 
 ## Sujet

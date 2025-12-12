@@ -1,0 +1,158 @@
+/* Application de la méthodologie BEM pour le header */
+
+/* Header Block */
+.header {
+    /* Header noir avec écriture dorée */
+    background-color: var(--noir);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Ajout du style pour le logo avec image */
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* Logo en or profond */
+    color: var(--or-profond);
+}
+
+.header__logo-image {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Site title inside the logo link */
+.header__site-title {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    margin: 0;
+    line-height: 1;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .header__site-title {
+        font-size: 1.25rem;
+    }
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.header__nav-item {
+    /* Item container */
+}
+
+.header__nav-link {
+    /* Liens en or profond */
+    color: var(--or-profond);
+    font-weight: 500;
+    padding: 8px 0;
+    position: relative;
+}
+
+.header__nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--or-profond);
+}
+
+.header__nav-link--active::after {
+    width: 100%;
+}
+
+/* Mobile Menu Toggle */
+.header__menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.header__menu-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    /* Menu hamburger en doré */
+    background-color: var(--or-profond);
+    transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .header__menu-toggle {
+        display: flex;
+    }
+
+    .header__nav-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        /* Menu mobile noir */
+        background-color: var(--noir);
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: var(--transition);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .header__nav-list.active {
+        max-height: 500px;
+        padding: 20px;
+    }
+
+    .header__nav-item {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .header__nav-item:last-child {
+        border-bottom: none;
+    }
+
+    .header__nav-link {
+        display: block;
+        padding: 15px;
+    }
+
+    .header__menu-toggle.active .header__menu-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .header__menu-toggle.active .header__menu-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header__menu-toggle.active .header__menu-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}

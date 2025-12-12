@@ -1,0 +1,404 @@
+/* Application de la méthodologie BEM pour les cartes */
+
+/* Card Block */
+.card {
+    /* Card blanche avec bordure dorée */
+    background-color: white;
+    border: 2px solid var(--doré-clair);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card__icon {
+    /* Icône avec fond doré */
+    background-color: var(--doré-clair);
+    border-radius: 12px;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card__icon .icon {
+    width: 30px;
+    height: 30px;
+    color: var(--noir);
+}
+
+.card__title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--noir);
+}
+
+.card__description {
+    color: var(--noir);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card__link {
+    color: var(--or-profond);
+    font-weight: 600;
+    /* Suppression de la transition */
+}
+
+/* Suppression du :hover sur card__link */
+
+.card__title-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: var(--noir);
+}
+
+.card__icon-inline {
+    width: 24px;
+    height: 24px;
+    color: var(--or-profond);
+}
+
+.card__info-highlight {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--or-profond);
+    margin-bottom: 15px;
+}
+
+.card__info-text {
+    color: var(--noir);
+    margin-bottom: 15px;
+}
+
+/* Ajout des styles pour les cards de programme */
+
+/* Filters Section */
+.section--filters {
+    padding: 20px 0;
+    background-color: white;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.filters__button {
+    padding: 10px 20px;
+    border: 2px solid var(--doré-clair);
+    border-radius: 25px;
+    background-color: white;
+    color: var(--noir);
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.filters__button--active {
+    background-color: var(--doré-clair);
+    color: var(--noir);
+}
+
+/* Program Grid */
+.program-grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* Program Card Block */
+.program-card {
+    background-color: white;
+    border: 2px solid var(--doré-clair);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.program-card--hidden {
+    display: none;
+}
+
+/* Program Card Header */
+.program-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.program-card__title {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--noir);
+    line-height: 1.3;
+    margin: 0;
+}
+
+.program-card__tag {
+    padding: 6px 16px;
+    border: 1.5px solid var(--doré-clair);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--or-profond);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.program-card__tag--baroque,
+.program-card__tag--concerto,
+.program-card__tag--vocal {
+    border-color: var(--doré-clair);
+    color: var(--or-profond);
+}
+
+/* Program Card Info */
+.program-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.program-card__info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--gris-claire);
+    font-size: 0.95rem;
+}
+
+.program-card__icon {
+    width: 20px;
+    height: 20px;
+    color: var(--doré-clair);
+    flex-shrink: 0;
+}
+
+/* Program Card Details */
+.program-card__details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 16px;
+    border-top: 1px solid var(--doré-clair);
+}
+
+.program-card__composer {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--noir);
+    margin: 0;
+}
+
+.program-card__work {
+    font-style: italic;
+    color: var(--gris-claire);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.program-card__performers {
+    color: var(--gris-claire);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Ajout des styles pour les statistiques */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.stat-card {
+    background-color: var(--ivoir);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stat-card__number {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--or-profond);
+    margin: 0 0 10px 0;
+}
+
+.stat-card__label {
+    font-size: 1rem;
+    color: var(--gris-claire);
+    margin: 0;
+}
+
+/* Ajout des styles pour les valeurs */
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.value-card {
+    background-color: white;
+    border: 2px solid var(--doré-clair);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+}
+
+.value-card__icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--ivoir);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.value-card__icon svg {
+    color: var(--or-profond);
+}
+
+.value-card__title {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--noir);
+    margin: 0 0 15px 0;
+}
+
+.value-card__description {
+    font-size: 0.95rem;
+    color: var(--gris-claire);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Ajout des styles pour l'équipe */
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.team-card {
+    background-color: white;
+    border: 2px solid var(--doré-clair);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+}
+
+.team-card__icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--ivoir);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.team-card__icon svg {
+    color: var(--or-profond);
+}
+
+.team-card__name {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--noir);
+    margin: 0 0 8px 0;
+}
+
+.team-card__role {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--or-profond);
+    margin: 0 0 15px 0;
+}
+
+.team-card__description {
+    font-size: 0.9rem;
+    color: var(--gris-claire);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .program-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filters {
+        justify-content: center;
+    }
+
+    .program-card__title {
+        font-size: 1.5rem;
+    }
+
+    /* Responsive pour les nouvelles grilles */
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Partners Mini Card */
+.partners__logo {
+    background-color: var(--ivoir);
+    border: 2px solid var(--doré-clair);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.partners__logo:hover {
+    border-color: var(--or-profond);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.partners__logo img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+}

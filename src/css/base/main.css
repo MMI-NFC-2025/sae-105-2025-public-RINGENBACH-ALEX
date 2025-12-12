@@ -55,12 +55,10 @@ a {
     /* Utilisation des nouvelles couleurs */
     color: var(--noir);
     text-decoration: none;
-    transition: var(--transition);
+    /* Suppression de la transition pour le mobile-first */
 }
 
-a:hover {
-    color: var(--or-profond);
-}
+/* Suppression du :hover sur les liens */
 
 img {
     max-width: 100%;

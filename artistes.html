@@ -7,11 +7,9 @@
     <title>Artistes | Chorus Symphonia 2025</title>
     <meta name="description"
         content="Découvrez les artistes exceptionnels qui participent au festival Chorus Symphonia 2025">
-    <!-- Import uniquement du fichier style.css principal -->
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Modification de la police pour utiliser Arimo -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Arimo:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -23,11 +21,9 @@
 </head>
 
 <body>
-    <!-- Application de BEM et amélioration de l'accessibilité -->
     <header class="header" role="banner">
         <div class="container">
             <nav class="header__nav" role="navigation" aria-label="Navigation principale">
-                <!-- Ajout du logo image -->
                 <a href="index.html" class="header__logo">
                     <img src="assets/icons/logo.svg" alt="" class="header__logo-image" aria-hidden="true">
                     <span>Chorus Symphonia</span>
@@ -52,9 +48,7 @@
     </header>
 
     <main role="main">
-        <!-- Remplacement de page-header par un hero avec image -->
         <section class="hero hero--with-image hero--small">
-            <!-- Remplacement du placeholder par une image générée -->
             <img src="assets/img/hero_artiste.png" alt="Artistes de musique classique sur scène"
                 class="hero__background" aria-hidden="true" loading="lazy">
             <div class="hero__overlay"></div>
@@ -68,8 +62,7 @@
 
         <section class="section">
             <div class="container">
-                <div class="grid grid--3">
-                    <!-- Application de la nomenclature BEM pour les cartes d'artistes -->
+                    <div class="grid grid--3">
                     <section class="artist">
                         <div class="artist__image">
                             <img src="/assets/img/ann_akiko_meyers.png" alt="Portrait d'Anne Akiko Meyersa"
@@ -171,7 +164,6 @@
         </section>
     </main>
 
-    <!-- Ajout de la modal pour afficher les détails de l'artiste -->
     <div class="modal" id="artistModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal__overlay" aria-label="Fermer la fenêtre"></div>
         <div class="modal__content">
@@ -221,8 +213,26 @@
                     </ul>
                 </div>
 
-                <div class="footer-section">
-                    <h4 class="footer-heading">Newsletter</h4>
+                <div class="footer__section">
+                    <h4 class="footer__heading">Nous suivre</h4>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook" title="Facebook" class="footer__social-link">
+                            <img src="assets/icons/facebook_blanc.svg" alt="" width="24" height="24" loading="lazy">
+                        </a>
+                        <a href="#" aria-label="Twitter" title="Twitter" class="footer__social-link">
+                            <img src="assets/icons/twitter_blanc.svg" alt="" width="24" height="24" loading="lazy">
+                        </a>
+                        <a href="#" aria-label="Instagram" title="Instagram" class="footer__social-link">
+                            <img src="assets/icons/instagram_blanc.svg" alt="" width="24" height="24" loading="lazy">
+                        </a>
+                        <a href="#" aria-label="YouTube" title="YouTube" class="footer__social-link">
+                            <img src="assets/icons/youtube_blanc.svg" alt="" width="24" height="24" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__heading">Newsletter</h4>
                     <p class="footer-newsletter-text">Restez informé de nos actualités</p>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Votre email" class="newsletter-input" required>
@@ -231,7 +241,7 @@
                 </div>
             </div>
 
-            <div class="footer-bottom">
+            <div class="footer__bottom">
                 <p>&copy; 2025 Chorus Symphonia. Tous droits réservés.</p>
             </div>
         </div>
