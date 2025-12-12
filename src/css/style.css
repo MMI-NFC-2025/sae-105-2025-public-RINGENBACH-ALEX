@@ -22,6 +22,5 @@
 @import "components/carousel.css";
 @import "components/hero.css";
 @import "components/menu.css";
-
-/* Ajout de l'import pour le composant modal */
 @import "components/faq.css";
+@import "components/contact.css";

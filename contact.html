@@ -6,32 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Chorus Symphonia 2025</title>
     <link rel="stylesheet" href="src/css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Arimo:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="/assets/icons/favicons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicons/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/icons/favicons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicons/apple-touch-icon.png" />
-    <link rel="manifest" href="/assets/icons/favicons/site.webmanifest" />
+
+    <link rel="icon" type="image/png" href="/assets/icons/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicons/favicon.svg">
+    <link rel="shortcut icon" href="/assets/icons/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/icons/favicons/site.webmanifest">
 </head>
 
 <body>
     <header class="header" role="banner">
         <div class="container">
             <nav class="header__nav" role="navigation" aria-label="Navigation principale">
+
                 <a href="index.html" class="header__logo">
                     <img src="assets/icons/logo.svg" alt="" class="header__logo-image" aria-hidden="true">
                     <span>Chorus Symphonia</span>
                 </a>
+
                 <button class="header__menu-toggle" id="menuToggle" aria-label="Ouvrir le menu de navigation"
                     aria-expanded="false" aria-controls="navMenu">
                     <span class="header__menu-line"></span>
                     <span class="header__menu-line"></span>
                     <span class="header__menu-line"></span>
                 </button>
+
                 <ul class="header__nav-list" id="navMenu">
                     <li class="header__nav-item"><a href="programme.html" class="header__nav-link">Programme</a></li>
                     <li class="header__nav-item"><a href="artistes.html" class="header__nav-link">Artistes</a></li>
@@ -41,15 +47,19 @@
                             pratiques</a></li>
                     <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
                 </ul>
+
             </nav>
         </div>
     </header>
 
     <main role="main">
+
+        <!-- HERO -->
         <section class="hero hero--with-image hero--small">
             <img src="assets/img/hero_accueil.webp" alt="Nous contacter" class="hero__background" aria-hidden="true"
                 loading="lazy">
             <div class="hero__overlay"></div>
+
             <div class="container">
                 <div class="hero__content">
                     <h1 class="hero__title">Contact</h1>
@@ -58,9 +68,64 @@
             </div>
         </section>
 
+        <!-- CONTACT CONTENT -->
         <section class="section">
             <div class="container">
                 <div class="contact">
+
+                    <!-- FORMULAIRE D'ABORD -->
+                    <div class="contact__form-container">
+                        <h2>Envoyez-nous un Message</h2>
+
+                        <form class="contact__form" aria-label="Formulaire de contact">
+
+                            <div class="form-group">
+                                <label for="name">Nom complet <abbr title="obligatoire">*</abbr></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email <abbr title="obligatoire">*</abbr></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Sujet <abbr title="obligatoire">*</abbr></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option value="billetterie">Billetterie</option>
+                                    <option value="programme">Programme</option>
+                                    <option value="partenariat">Partenariat</option>
+                                    <option value="presse">Presse</option>
+                                    <option value="accessibilite">Accessibilité</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message <abbr title="obligatoire">*</abbr></label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    <span>Je souhaite recevoir la newsletter du festival</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary">Envoyer le message</button>
+
+                            <p class="form-note"><abbr title="obligatoire">*</abbr> Champs obligatoires</p>
+                        </form>
+                    </div>
+
+                    <!-- COORDONNÉES ENSUITE -->
                     <div class="contact__info">
                         <h2>Nos Coordonnées</h2>
 
@@ -84,20 +149,16 @@
 
                         <div class="contact__block">
                             <h3>Email</h3>
-                            <p>
-                                <strong>Information générale :</strong><br>
+                            <p><strong>Information générale :</strong><br>
                                 <a href="mailto:contact@chorussymphonia.fr">contact@chorussymphonia.fr</a>
                             </p>
-                            <p>
-                                <strong>Billetterie :</strong><br>
+                            <p><strong>Billetterie :</strong><br>
                                 <a href="mailto:billetterie@chorussymphonia.fr">billetterie@chorussymphonia.fr</a>
                             </p>
-                            <p>
-                                <strong>Presse :</strong><br>
+                            <p><strong>Presse :</strong><br>
                                 <a href="mailto:presse@chorussymphonia.fr">presse@chorussymphonia.fr</a>
                             </p>
-                            <p>
-                                <strong>Partenariats :</strong><br>
+                            <p><strong>Partenariats :</strong><br>
                                 <a href="mailto:partenariats@chorussymphonia.fr">partenariats@chorussymphonia.fr</a>
                             </p>
                         </div>
@@ -113,67 +174,18 @@
                         </div>
                     </div>
 
-                    <div class="contact__form-container">
-                        <h2>Envoyez-nous un Message</h2>
-                        <form class="contact__form" aria-label="Formulaire de contact">
-                            <div class="form-group">
-                                <label for="name">Nom complet <abbr title="obligatoire"
-                                        aria-label="obligatoire">*</abbr></label>
-                                <input type="text" id="name" name="name" required aria-required="true">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Email <abbr title="obligatoire"
-                                        aria-label="obligatoire">*</abbr></label>
-                                <input type="email" id="email" name="email" required aria-required="true">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="phone">Téléphone</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="subject">Sujet <abbr title="obligatoire"
-                                        aria-label="obligatoire">*</abbr></label>
-                                <select id="subject" name="subject" required aria-required="true">
-                                    <option value="">Sélectionnez un sujet</option>
-                                    <option value="billetterie">Billetterie</option>
-                                    <option value="programme">Programme</option>
-                                    <option value="partenariat">Partenariat</option>
-                                    <option value="presse">Presse</option>
-                                    <option value="accessibilite">Accessibilité</option>
-                                    <option value="autre">Autre</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Message <abbr title="obligatoire"
-                                        aria-label="obligatoire">*</abbr></label>
-                                <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="newsletter">
-                                    <span>Je souhaite recevoir la newsletter du festival</span>
-                                </label>
-                            </div>
-
-                            <button type="submit" class="btn btn--primary">Envoyer le message</button>
-
-                            <p class="form-note"><abbr title="obligatoire" aria-label="obligatoire">*</abbr> Champs
-                                obligatoires</p>
-                        </form>
-                    </div>
                 </div>
             </div>
         </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer" role="contentinfo">
         <div class="container">
+
             <div class="footer__grid">
+
                 <div class="footer__section">
                     <h3 class="footer__title">Chorus Symphonia</h3>
                     <p class="footer__description">Le rendez-vous incontournable de la musique classique à Paris depuis
@@ -203,37 +215,37 @@
                 <div class="footer__section">
                     <h4 class="footer__heading">Suivez-nous</h4>
                     <div class="footer__social">
-                        <a href="#" aria-label="Facebook" title="Facebook" class="footer__social-link">
-                            <img src="assets/icons/facebook_blanc.svg" alt="" width="24" height="24" loading="lazy">
-                        </a>
-                        <a href="#" aria-label="Twitter" title="Twitter" class="footer__social-link">
-                            <img src="assets/icons/twitter_blanc.svg" alt="" width="24" height="24" loading="lazy">
-                        </a>
-                        <a href="#" aria-label="Instagram" title="Instagram" class="footer__social-link">
-                            <img src="assets/icons/instagram_blanc.svg" alt="" width="24" height="24" loading="lazy">
-                        </a>
-                        <a href="#" aria-label="YouTube" title="YouTube" class="footer__social-link">
-                            <img src="assets/icons/youtube_blanc.svg" alt="" width="24" height="24" loading="lazy">
-                        </a>
+                        <a href="#" class="footer__social-link"><img src="assets/icons/facebook_blanc.svg" alt=""
+                                width="24" height="24" loading="lazy"></a>
+                        <a href="#" class="footer__social-link"><img src="assets/icons/twitter_blanc.svg" alt=""
+                                width="24" height="24" loading="lazy"></a>
+                        <a href="#" class="footer__social-link"><img src="assets/icons/instagram_blanc.svg" alt=""
+                                width="24" height="24" loading="lazy"></a>
+                        <a href="#" class="footer__social-link"><img src="assets/icons/youtube_blanc.svg" alt=""
+                                width="24" height="24" loading="lazy"></a>
                     </div>
                 </div>
 
                 <div class="footer__section">
                     <h4 class="footer__heading">Newsletter</h4>
-                    <form class="footer__newsletter-form" aria-label="Formulaire d'inscription à la newsletter">
-                        <label for="newsletter-email" class="sr-only">Adresse email pour la newsletter</label>
-                        <input type="email" id="newsletter-email" placeholder="Votre email"
-                            class="footer__newsletter-input" required aria-required="true">
+                    <form class="footer__newsletter-form">
+                        <label for="newsletter-email" class="sr-only">Adresse email</label>
+                        <input type="email" id="newsletter-email" class="footer__newsletter-input"
+                            placeholder="Votre email" required>
                         <button type="submit" class="btn btn--primary btn--sm">OK</button>
                     </form>
                 </div>
+
             </div>
 
             <div class="footer__bottom">
-                <p>&copy; 2025 Chorus Symphonia. Tous droits réservés. <a href="#" class="footer__legal-link">Politique
-                        de confidentialité</a> <a href="#" class="footer__legal-link">CGV</a> <a href="#"
-                        class="footer__legal-link">Mentions légales</a></p>
+                <p>&copy; 2025 Chorus Symphonia. Tous droits réservés.
+                    <a href="#" class="footer__legal-link">Politique de confidentialité</a>
+                    <a href="#" class="footer__legal-link">CGV</a>
+                    <a href="#" class="footer__legal-link">Mentions légales</a>
+                </p>
             </div>
+
         </div>
     </footer>
 

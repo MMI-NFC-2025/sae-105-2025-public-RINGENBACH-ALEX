@@ -497,13 +497,3 @@
     text-decoration: none;
     margin: 0 10px;
 }
-
-@media (min-width: 768px) {
-    .artist-hero__name {
-        font-size: 3rem;
-    }
-
-    .artist-hero__role {
-        font-size: 1.5rem;
-    }
-}
