@@ -1,9 +1,54 @@
 <!DOCTYPE html>
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<title>404 - Page Non trouvée</title>
-<h1>Page Non trouvée</h1>
-<form action="https://duckduckgo.com/" method="GET" x-data="{ q:'', }" x-on:submit="q = q + ' site:mmimontbeliard.com'">
-    <label for="q">Text à chercher :</label>
-    <input type="text" id="q" name="q" x-model="q">
-    <button type="submit">Rechercher</button>
-</form>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 – Page Non Trouvée</title>
+    <meta name="description" content="La page demandée est introuvable.">
+
+    <!-- Styles globaux -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/assets/icons/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/icons/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/icons/favicons/site.webmanifest" />
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <main class="container page-404">
+        <section class="page-404__card">
+            <h1 class="page-404__title">404</h1>
+            <p class="page-404__subtitle">La page que vous cherchez n’existe pas ou a été déplacée.</p>
+
+            <form action="https://duckduckgo.com/" method="GET" class="page-404__form" x-data="{ q:'' }"
+                x-on:submit="q = q + ' site:mmimontbeliard.com'">
+
+                <label for="q" class="page-404__label">Texte à chercher :</label>
+                <input type="text" id="q" name="q" x-model="q" class="page-404__input"
+                    placeholder="Rechercher sur mmimontbeliard.com...">
+
+                <button type="submit" class="page-404__button">Rechercher</button>
+            </form>
+
+            <p class="text-muted page-404__note">Erreur 404 — Page introuvable</p>
+        </section>
+    </main>
+
+</body>
+
+</html>
